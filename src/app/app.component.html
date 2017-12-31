@@ -6,15 +6,16 @@
       <div class="header-navbar">
           <!-- Placeholders atm, will replace with currentpage.elem1 -->
           <a routerLink="/" style="grid-column: 1">Home</a> 
-          <a routerLink="/account" style="grid-column: 2">Account</a>
+          <a routerLink="/account/id:1" style="grid-column: 2">Account</a>
           <a routerLink="/newpost" style="grid-column: 3">New Post</a>
-          <a routerLink="/signin" style="grid-column: 4">Sign Up / In</a>
+          <a routerLink="/signin-up" style="grid-column: 4">Sign Up / In</a>
         </div>
   </div>
   
   <div class="content">
     <!-- <app-home></app-home> -->
     <router-outlet></router-outlet>
+    <app-messages></app-messages>
   </div>
   <div class="footer">
     <h3>I am a footer</h3>

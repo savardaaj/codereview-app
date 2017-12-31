@@ -9,6 +9,11 @@ import { HomeComponent } from './home/home.component';
 import { NewpostComponent } from './newpost/newpost.component';
 import { PostedComponent } from './posted/posted.component';
 import { AccountComponent } from './account/account.component';
+import { SigninUpComponent } from './signin-up/signin-up.component';
+import { MessageService }       from './message.service';
+import { MessagesComponent } from './messages/messages.component';
+import { AccountService } from './account.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [ //components
@@ -16,13 +21,16 @@ import { AccountComponent } from './account/account.component';
     HomeComponent,
     NewpostComponent,
     PostedComponent,
-    AccountComponent
+    AccountComponent,
+    SigninUpComponent,
+    MessagesComponent
   ],
   imports: [ //modules
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [], //services here
+  providers: [AccountService, MessageService], //services here
   bootstrap: [AppComponent]
 })
 export class AppModule { }
