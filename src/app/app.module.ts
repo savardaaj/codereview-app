@@ -1,42 +1,28 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { AngularUpload} from '@angular/angular-upload';
+
+import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NewpostComponent } from './newpost/newpost.component';
 import { PostedComponent } from './posted/posted.component';
+import { AccountComponent } from './account/account.component';
 
-const appRoutes: Routes = [
-  { path: '/', component: HomeComponent },
-  { path: '/newpost', component: NewpostComponent },
-  // { path: '/account', component: AccountComponent },
-  // {
-  //   path: 'heroes',
-  //   component: HeroListComponent,
-  //   data: { title: 'Heroes List' }
-  // },
-  // { path: '',
-  //   redirectTo: '/heroes',
-  //   pathMatch: 'full'
-  // },
-  // { path: '**', component: PageNotFoundComponent }
-];
 @NgModule({
-  declarations: [
+  declarations: [ //components
     AppComponent,
     HomeComponent,
     NewpostComponent,
-    PostedComponent
+    PostedComponent,
+    AccountComponent
   ],
-  imports: [
-    // RouterModule.forRoot(
-    //   appRoutes,
-    //   { enableTracing: true } //debug purposes only
-    // ),
-    BrowserModule
+  imports: [ //modules
+    BrowserModule,
+    AppRoutingModule
   ],
-  providers: [],
+  providers: [], //services here
   bootstrap: [AppComponent]
 })
 export class AppModule { }

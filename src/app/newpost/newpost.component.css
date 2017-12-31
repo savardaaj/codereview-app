@@ -1,7 +1,7 @@
 :host div.newpost-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 25fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 25fr;
     grid-column-gap: 1px;
     
     text-align: center;
@@ -19,7 +19,7 @@
     grid-column: 2/4;
 
     display: grid;
-    grid-template-rows: 2fr 24fr;
+    /* grid-template-rows: 2fr 24fr; */
     background: #fcfdff;
     height: 100%;
 }
@@ -39,4 +39,10 @@
 }
 :host div.spacer {
     grid-column: 1/6;
+}
+:host button.uploadFile {
+    grid-column: 3;
+}
+:host span.uploadDescription {
+    grid-column: 3;
 }

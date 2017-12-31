@@ -5,16 +5,16 @@
         </h3>
       <div class="header-navbar">
           <!-- Placeholders atm, will replace with currentpage.elem1 -->
-          <a href="/" style="grid-column: 1">Home</a> 
-          <a href="/account" style="grid-column: 2">Account</a>
-          <a href="/newpost" style="grid-column: 3">New Post</a>
-          <a href="/signin" style="grid-column: 4">Sign Up / In</a>
+          <a routerLink="/" style="grid-column: 1">Home</a> 
+          <a routerLink="/account" style="grid-column: 2">Account</a>
+          <a routerLink="/newpost" style="grid-column: 3">New Post</a>
+          <a routerLink="/signin" style="grid-column: 4">Sign Up / In</a>
         </div>
   </div>
   
   <div class="content">
     <!-- <app-home></app-home> -->
-    <app-newpost></app-newpost>
+    <router-outlet></router-outlet>
   </div>
   <div class="footer">
     <h3>I am a footer</h3>
