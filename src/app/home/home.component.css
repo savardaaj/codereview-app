@@ -1,0 +1,35 @@
+:host div.home-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 25fr;
+    grid-column-gap: 1px;
+    
+    text-align: center;
+
+    background: #edeff7;
+    
+}
+:host div.inner-container {
+    min-height: 100%;
+    grid-row: 1;
+}
+:host div.left-content {
+    text-align: center;
+    align-self: center;
+    grid-column: 2;
+
+    background: #fcfdff;
+    height: 100%;
+}
+
+:host div.right-content {
+    text-align: center;
+    align-self: center;
+    grid-column: 4;
+
+    background: #fcfdff;
+    height: 100%;
+}
+:host div.spacer {
+    grid-column: 1/6;
+}
